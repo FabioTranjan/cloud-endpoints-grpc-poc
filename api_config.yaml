@@ -1,0 +1,22 @@
+type: google.api.Service
+config_version: 3
+
+#
+# Name of the service configuration.
+#
+name: helloworld.endpoints.local-now-298000.cloud.goog
+
+#
+# API title to appear in the user interface (Google Cloud Console).
+#
+title: HelloWorld gRPC API
+apis:
+- name: helloworld.Greeter
+
+#
+# API usage restrictions.
+#
+usage:
+  rules:
+  - selector: helloworld.Greeter.SayHello
+    allow_unregistered_calls: true
